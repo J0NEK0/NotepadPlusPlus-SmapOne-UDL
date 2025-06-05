@@ -1,0 +1,20 @@
+/*
+# ResultPeriod_2
+Imaginary calculation of a duration, e.g. until the next maintenance:
+@param Checkbox     - whether the element had a defect (halve duration)
+@param Checkbox2    - whether the element was replaced (double duration)
+@param DateTime     - current date
+@param DateTime2    - optional date of next maintenance (input by user in case of defect)
+@param ResultPeriod - standard duration until next maintenance
+*/
+
+IF({Checkbox},
+	IF(NOTEMPTY({DateTime_2}),
+		SUB_DATE({DateTime_2}, {DateTime}),
+		IF({Checkbox_2},
+			MUL_PERIOD({ResultPeriod}, 2),
+			MUL_PERIOD({ResultPeriod}, 0.5)
+		)
+	),
+	P365D
+)
