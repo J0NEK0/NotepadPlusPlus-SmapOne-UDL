@@ -1,0 +1,2 @@
+# NotepadPlusPlus-SmapOne-UDL
+Notepad++ UDL for syntax used by SmapOne formulas
