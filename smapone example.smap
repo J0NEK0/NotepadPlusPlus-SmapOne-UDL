@@ -1,4 +1,44 @@
 /*
+# Set check
+Checks if a series of whole numbers in {RepeatGroup} represent a set starting at a given number
+and with a size equal to the number of items.
+
+Assuming {RepeatGroup} has N=3 entries with {Number_Start} set to 1, then this check is only
+passed if the numbers used as input for each entry are any permutation of [1, 2, 3], e. g.
+[3, 2, 1], [1, 3, 2] and so on.
+
+@param {Number_Start}         - starting number (inklusive)
+@param {Number_Input}         - individual number in each item of {RepeatGroup}
+@param {ResultNumber_Counter} - constant (1) used to count number of entries
+*/
+IF(
+	AND(
+		GREATERTHANOREQUAL(MIN({RepeatGroup.Number_Input}), {Number_Start}),
+		LESSTHANOREQUAL(
+			MAX({RepeatGroup.Number_Input}),
+			ADD(
+				{Number_Start},
+				SUB(SUM({RepeatGroup.ResultNumber_Counter}), 1)
+			)
+		),
+		EQUALS(
+			SUB(
+				SUM({RepeatGroup.Number_Input}),
+					PROD(
+						0.5,
+						SUB(SUM({RepeatGroup.ResultNumber_Counter}), 1),
+						SUM({RepeatGroup.ResultNumber_Counter})
+					)
+			),
+			MUL({Number_Start}, SUM({RepeatGroup.ResultNumber_Counter}))
+		)
+	),
+	"Pass",
+	"Fail"
+)
+
+
+/*
 # ResultPeriod_2
 Imaginary calculation of a duration, e.g. until the next maintenance:
 @param Checkbox     - whether the element had a defect (halve duration)
