@@ -1,6 +1,21 @@
-# NotepadPlusPlus-SmapOne-UDL
+# Notepad++ SmapOne-UDL
+
+<details open>
+
+<summary>Deutsch (Englisch version below)</summary>
+
+
+
+</details>
+
+---
+
+<details>
+
+<summary>English</summary>
 This repository provides a Notepad++ User-defined Language (UDL) for the syntax used by SmapOne formulas.  
-SmapOne pursues a low-code / no-code approach but formulas can get very hard to read quite fast, especially when you want to avoid extra building blocks (to store "variables") as much as possible.
+SmapOne pursues a low-code / no-code approach.
+Nonetheless, formulas can get very hard to read quite fast, especially if you want to avoid extra building blocks (to store "variables") as much as possible.
 
 ![smapone highlighting example image](/smapone%20example.png)
 Make SmapOne formulas easier to understand and debug using indentation.
@@ -14,5 +29,7 @@ Make SmapOne formulas easier to understand and debug using indentation.
 6. Go to *Language* again and select `SmapOne` or `SmapOne+` right under *User Defined Language* to enable the highlighting for a file in your current session
 
 Notepad++ should automatically select the language for every *.smap* or *.smapone* file opened from now on.
-> [!TIP]
+> Tip: 
 > To customize this UDL, go to *Language -> User Defined Language -> Define your language* and select `SmapOne` or `SmapOne+` in the dropdown menu.
+
+</details>
