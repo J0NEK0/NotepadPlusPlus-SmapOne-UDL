@@ -24,7 +24,7 @@
             <Keywords name="Folders in comment, open"></Keywords>
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
-            <Keywords name="Keywords1">Add Add_Period And Avg Capitalize Concat Contains Days Div Empty EndsWith Equals GreaterThan GreaterThanOrEqual Hours If Join Left Length LessThan LessThanOrEqual Lowercase MRound MRoundDown MRoundUp Match Max Min Minutes Mul Mul_Period Not NotEmpty NotEquals Or Prod Replace Right Round RoundDown RoundUp Seconds StartsWith Sub SubText Sub_Date Sub_Period Sum Text TextPos TotalDays TotalHours TotalMinutes TotalSeconds Uppercase</Keywords>
+            <Keywords name="Keywords1">Add Add_Period And Avg Capitalize Concat Contains Cos Cos_Deg Days Div Empty EndsWith Equals GreaterThan GreaterThanOrEqual Hours If Join Left Length LessThan LessThanOrEqual Lowercase MRound MRoundDown MRoundUp Match Max Min Minutes Mod Mul Mul_Period Mul_Period Not NotEmpty NotEquals Or Power Prod Replace Right Round RoundDown RoundUp Seconds Sin Sin_Deg Sqrt StartsWith Sub SubText Sub_Date Sub_Period Sum Tan Tan_Deg Text TextPos TotalDays TotalHours TotalMinutes TotalSeconds Uppercase</Keywords>
             <Keywords name="Keywords2">P</Keywords>
             <Keywords name="Keywords3"></Keywords>
             <Keywords name="Keywords4"></Keywords>
